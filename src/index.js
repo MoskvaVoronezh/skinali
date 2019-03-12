@@ -1,6 +1,6 @@
 
-import './js/common'
-import './css/main.css'
+//import './js/common'
+import './css/normalize.css'
 import './scss/main.scss'
 
 // import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
