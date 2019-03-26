@@ -1,3 +1,23 @@
+$text-color: #262626;
+
 body {
+	font-family: 'Proxima Nova Light', sans-serif;
+	color: $text-color;
+}
+.button-o {
+	text-transform: uppercase;
+	border: 2px solid #507fe1;
+	padding: 17px 22px;
+	font-size: 12px; 
+	font-family: 'Proxima Nova Semibold', sans-serif;
+	color: #507fe1;
+	background-color: #fff;
+}
+.button {
+	padding: 25px 45px;
+	text-transform: uppercase;
+	border: none;
+	background-color: $primary;
+	color: #fff;
 	@include bold;
 }

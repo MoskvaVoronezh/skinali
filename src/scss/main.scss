@@ -1,4 +1,7 @@
 @import 'grid'; //базовые настройки сетки
-@import 'blocks/navbar'; // шапка сайта верхнее меню
 @import 'fonts'; //шрифты
-@import 'interface';
+@import 'colors'; //цвета
+@import 'blocks/navbar'; // шапка сайта верхнее меню
+@import 'interface'; // настройки интерфейса
+@import 'blocks/hero'; 
+
