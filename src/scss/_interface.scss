@@ -21,6 +21,38 @@ body {
 	color: #fff;
 	@include bold;
 }
+.input {
+	height: 80px;
+	width: 100%;
+	padding-left: 30px;
+	border: 1px solid #dddddd;
+}
+input[type="checkbox"] {
+	display: none;
+	&:checked + label:before {
+		background-color: $primary;
+	}
+}
+.checkbox {
+	&-label {
+		display: flex;
+		align-items: center;
+		margin-right: 42px;
+		&:hover {
+			cursor: pointer;
+		}
+		&:before {
+			content: "";
+			margin-right: 20px;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #dddddd;
+		}
+	}
+}
+.bg-secondary {
+	background-color: $bg-secondary;
+}
 
 @media (max-width: 576px) {
 	.button-o {
