@@ -9,7 +9,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		min-height: 82px;
 	}
 
 	&__mobile, &__landline {
@@ -40,7 +39,7 @@
 	left: 0;
 	background-color: $primary;
 	color: #fff;
-	transform: translateY(0);
+	transform: translateY(-200%);
 	&_active {
 		transform: translateY(0);
 	}
@@ -87,5 +86,31 @@
 		font-size: 14px;
 		display: block;
 		color: #6b6b6b;
+	}
+}
+
+@media (max-width: 991px) {
+	.navbar {
+		&__mobile, &__landline {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.logo {
+			display: none;
+	}
+	.menu {
+		top: 60px;
+		&-button {
+			height: 60px;
+		}
+		&__nav {
+			flex-direction: column;
+		}
+		&__link {
+			margin-bottom: 20px;
+		}
 	}
 }

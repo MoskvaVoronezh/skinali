@@ -11,8 +11,12 @@
 		margin-bottom: 67px;
 		font-size: 30px;
 		@include bold; 
-		display: block;
-		
+		display: block;	
 	}
-
+}
+@media (max-width: 991px) {
+	.hero {
+		background-size: cover;
+		background-position: top left 30%;
+	}
 }
