@@ -4,6 +4,9 @@ body {
 	font-family: 'Proxima Nova Light', sans-serif;
 	color: $text-color;
 }
+img {
+	max-width: 100%;
+}
 .section {
 	padding: 100px 0;
 	&-title {
@@ -32,7 +35,23 @@ body {
 	background-color: $primary;
 	color: #fff;
 	@include bold;
+	text-decoration: none;
+	&-fitting {
+		color: $primary;
+		background-color: #fff;
+	}
+	&-add {
+		background-color: lighten($primary, 10%);
+		color: #fff;
+	}
+	&-like {
+		background-color: $primary;
+		height: 30px;
+		width: 30px;
+		border: none;
+	}
 }
+
 .input {
 	height: 80px;
 	width: 100%;
