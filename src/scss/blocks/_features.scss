@@ -1,0 +1,32 @@
+.features {
+	&-block {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap; //если не помещатся в строчку, должны переноситься
+		&__item {
+			flex-basis: 33%; //базовая ширина
+			text-align: center;
+			margin-bottom: 100px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.features {
+		&-block {
+			&__item {
+				flex-basis: 50%;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.features {
+		&-block {
+			&__item {
+				flex-basis: 100%;
+				margin-bottom: 50px;
+			}
+		}
+	}
+}
